@@ -63,7 +63,7 @@ class _HaircutsState extends State<Haircuts> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => DetailBobCurly(),
+                    builder: (_) => DetailCurlyFade(),
                   ),
                 );
               },
@@ -100,7 +100,7 @@ class _HaircutsState extends State<Haircuts> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => DetailBobCurly(),
+                    builder: (_) => DetailMessyHair(),
                   ),
                 );
               },
@@ -116,7 +116,7 @@ class _HaircutsState extends State<Haircuts> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Messy Come Over",
+                  Text("Messy Hair",
                       style:
                           TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                       maxLines: 1),
@@ -137,7 +137,7 @@ class _HaircutsState extends State<Haircuts> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => DetailBobCurly(),
+                    builder: (_) => DetailPompadour(),
                   ),
                 );
               },
@@ -174,7 +174,7 @@ class _HaircutsState extends State<Haircuts> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => DetailBobCurly(),
+                    builder: (_) => DetailUndercut(),
                   ),
                 );
               },
