@@ -38,19 +38,15 @@ class _HomePageState extends State<HomePage> {
           Container(
             margin: EdgeInsets.all(20),
             child: TextFormField(
-                keyboardType: TextInputType.name,
-                controller: namaLengkapController,
-                decoration: InputDecoration(
-                  labelText: "Nama Lengkap",
-                  fillColor: Color.fromARGB(50, 29, 92, 99),
-                  filled: true,
-                  border: OutlineInputBorder(),
-                ),
-                validator: (value) {
-                  if (value == "") {
-                    return "Nama lengkap tidak boleh kosong";
-                  }
-                }),
+              keyboardType: TextInputType.name,
+              controller: namaLengkapController,
+              decoration: InputDecoration(
+                labelText: "Nama Lengkap",
+                fillColor: Color.fromARGB(50, 29, 92, 99),
+                filled: true,
+                border: OutlineInputBorder(),
+              ),
+            ),
           ),
           Container(
             margin: EdgeInsets.all(20),

@@ -10,9 +10,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final controllerNama = TextEditingController();
-  final controllerHaircut = TextEditingController();
-  final controllerHarga = TextEditingController();
   int _index = 1;
   static final List _pages = [
     Haircuts(),
