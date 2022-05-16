@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:posttest5_1915016083_erdianuspagesong/detail_Barberman.dart';
 
 class Barberman extends StatefulWidget {
   const Barberman({Key? key}) : super(key: key);
@@ -11,67 +12,169 @@ class _BarbermanState extends State<Barberman> {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      scrollDirection: Axis.vertical,
       children: [
-        Row(
-          children: [
-            Container(
-              width: 150,
-              height: 150,
-              margin: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/barber men1.jpg"),
-                ),
-              ),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "OUR BARBERMAN",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.italic),
             ),
-            Text("Joni Jontor"),
-          ],
+          ),
         ),
-        Row(
-          children: [
-            Container(
-              width: 150,
-              height: 150,
-              margin: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/barber men2.jpg"),
-                ),
-              ),
-            ),
-            Text("Udin Sedunia"),
-          ],
+        SizedBox(
+          height: 30,
         ),
-        Row(
-          children: [
-            Container(
-              width: 150,
-              height: 150,
-              margin: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/barber men3.jpg"),
-                ),
+        Padding(
+          /////////////////////////////Joni Jontor
+          padding: const EdgeInsets.all(8.0),
+          child: Material(
+            borderRadius: BorderRadius.circular(20),
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            elevation: 6,
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DetailJoniJontor(),
+                  ),
+                );
+              },
+              splashColor: Color.fromARGB(50, 29, 92, 99),
+              child: Row(
+                children: [
+                  Ink.image(
+                    width: 150,
+                    height: 150,
+                    image: AssetImage("assets/barber men1.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Joni Jontor",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
             ),
-            Text("Jemes Bond"),
-          ],
+          ),
         ),
-        Row(
-          children: [
-            Container(
-              width: 150,
-              height: 150,
-              margin: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("assets/barber men4.jpg"),
-                ),
+        Padding(
+          /////////////////////////////UDIN SEDUNIA
+          padding: const EdgeInsets.all(8.0),
+          child: Material(
+            borderRadius: BorderRadius.circular(20),
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            elevation: 6,
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DetailUdinSedunia(),
+                  ),
+                );
+              },
+              splashColor: Color.fromARGB(50, 29, 92, 99),
+              child: Row(
+                children: [
+                  Ink.image(
+                    width: 150,
+                    height: 150,
+                    image: AssetImage("assets/barber men2.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Udin Sedunia",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ],
               ),
             ),
-            Text("Jordi Torres"),
-          ],
+          ),
+        ),
+        Padding(
+          /////////////////////////////JEMES BOND
+          padding: const EdgeInsets.all(8.0),
+          child: Material(
+            borderRadius: BorderRadius.circular(20),
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            elevation: 6,
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DetailJemesBond(),
+                  ),
+                );
+              },
+              splashColor: Color.fromARGB(50, 29, 92, 99),
+              child: Row(
+                children: [
+                  Ink.image(
+                    width: 150,
+                    height: 150,
+                    image: AssetImage("assets/barber men3.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Jemes Bond",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          /////////////////////////////JORDI TORRES
+          padding: const EdgeInsets.all(8.0),
+          child: Material(
+            borderRadius: BorderRadius.circular(20),
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            elevation: 6,
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DetailJordiTorres(),
+                  ),
+                );
+              },
+              splashColor: Color.fromARGB(50, 29, 92, 99),
+              child: Row(
+                children: [
+                  Ink.image(
+                    width: 150,
+                    height: 150,
+                    image: AssetImage("assets/barber men4.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Jordi Torres",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

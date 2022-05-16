@@ -15,10 +15,10 @@ class DetailBobCurly extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
-              Color.fromARGB(255, 65, 125, 122),
+              Color.fromARGB(255, 29, 92, 99),
               Color.fromARGB(255, 237, 230, 219),
             ],
           ),
@@ -27,21 +27,38 @@ class DetailBobCurly extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                //margin: EdgeInsets.all(10.0),
-                width: 250,
-                height: 250,
-                margin: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/bob curly.jpg"),
-                    fit: BoxFit.cover,
+              Material(
+                color: Color.fromARGB(255, 29, 92, 99),
+                elevation: 8,
+                borderRadius: BorderRadius.circular(15),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: InkWell(
+                  splashColor: Color.fromARGB(50, 29, 92, 99),
+                  onTap: () {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        color: Color.fromARGB(255, 29, 92, 99),
+                        width: 4,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Ink.image(
+                      image: AssetImage("assets/bob curly.jpg"),
+                      height: 200,
+                      width: 200,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 "Bob Curly",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               Container(
                 margin: EdgeInsets.all(20),
@@ -82,10 +99,10 @@ class DetailCurlyFade extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
-              Color.fromARGB(255, 65, 125, 122),
+              Color.fromARGB(255, 29, 92, 99),
               Color.fromARGB(255, 237, 230, 219),
             ],
           ),
@@ -94,20 +111,38 @@ class DetailCurlyFade extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 250,
-                height: 250,
-                margin: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/curly fade.jpg"),
-                    fit: BoxFit.cover,
+              Material(
+                color: Color.fromARGB(255, 29, 92, 99),
+                elevation: 8,
+                borderRadius: BorderRadius.circular(15),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: InkWell(
+                  splashColor: Color.fromARGB(50, 29, 92, 99),
+                  onTap: () {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        color: Color.fromARGB(255, 29, 92, 99),
+                        width: 4,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Ink.image(
+                      image: AssetImage("assets/curly fade.jpg"),
+                      height: 200,
+                      width: 200,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 "Curly Fade",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               Container(
                 margin: EdgeInsets.all(20),
@@ -148,10 +183,10 @@ class DetailMessyHair extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
-              Color.fromARGB(255, 65, 125, 122),
+              Color.fromARGB(255, 29, 92, 99),
               Color.fromARGB(255, 237, 230, 219),
             ],
           ),
@@ -160,19 +195,38 @@ class DetailMessyHair extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 250,
-                height: 250,
-                margin: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
+              Material(
+                color: Color.fromARGB(255, 29, 92, 99),
+                elevation: 8,
+                borderRadius: BorderRadius.circular(15),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: InkWell(
+                  splashColor: Color.fromARGB(50, 29, 92, 99),
+                  onTap: () {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        color: Color.fromARGB(255, 29, 92, 99),
+                        width: 4,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Ink.image(
                       image: AssetImage("assets/messy hair.jpg"),
-                      fit: BoxFit.cover),
+                      height: 200,
+                      width: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Text(
                 "Messy Hair",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               Container(
                 margin: EdgeInsets.all(20),
@@ -213,10 +267,10 @@ class DetailPompadour extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
-              Color.fromARGB(255, 65, 125, 122),
+              Color.fromARGB(255, 29, 92, 99),
               Color.fromARGB(255, 237, 230, 219),
             ],
           ),
@@ -225,19 +279,38 @@ class DetailPompadour extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 250,
-                height: 250,
-                margin: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
+              Material(
+                color: Color.fromARGB(255, 29, 92, 99),
+                elevation: 8,
+                borderRadius: BorderRadius.circular(15),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: InkWell(
+                  splashColor: Color.fromARGB(50, 29, 92, 99),
+                  onTap: () {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        color: Color.fromARGB(255, 29, 92, 99),
+                        width: 4,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Ink.image(
                       image: AssetImage("assets/pompadour.jpg"),
-                      fit: BoxFit.cover),
+                      height: 200,
+                      width: 200,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Text(
                 "Pompadour",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               Container(
                 margin: EdgeInsets.all(20),
@@ -278,10 +351,10 @@ class DetailUndercut extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
             colors: [
-              Color.fromARGB(255, 65, 125, 122),
+              Color.fromARGB(255, 29, 92, 99),
               Color.fromARGB(255, 237, 230, 219),
             ],
           ),
@@ -290,20 +363,38 @@ class DetailUndercut extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                width: 250,
-                height: 250,
-                margin: EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage("assets/undercut.jpg"),
-                    fit: BoxFit.cover,
+              Material(
+                color: Color.fromARGB(255, 29, 92, 99),
+                elevation: 8,
+                borderRadius: BorderRadius.circular(15),
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: InkWell(
+                  splashColor: Color.fromARGB(50, 29, 92, 99),
+                  onTap: () {},
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      border: Border.all(
+                        color: Color.fromARGB(255, 29, 92, 99),
+                        width: 4,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Ink.image(
+                      image: AssetImage("assets/undercut.jpg"),
+                      height: 200,
+                      width: 200,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 "Undercut",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               Container(
                 margin: EdgeInsets.all(20),
